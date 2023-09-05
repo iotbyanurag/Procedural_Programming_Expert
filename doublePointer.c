@@ -32,30 +32,47 @@ int createDynamic2D_array(){
          - - - -
 
     */
-   char *new_ptr[]= {"hello", "world", "!"};
+//    char *new_ptr[]= {"hello", "world", "!"};
 
-   char *ptr= "my hello world";
-    printf("deref the ptr pointing to the string %c\n", *ptr);
+//    char *ptr= "my hello world";
+//     printf("deref the ptr pointing to the string %s\n", *ptr);
 
-    while(*ptr != '\0'){
-        printf("%c",*ptr++);
+//     while(*ptr != '\0'){
+//         printf("%c",*ptr++);
+//     }
+//     printf("\n");
+
+
+//     new_ptr[0]= "new";
+//     new_ptr[100]= "colony";
+//      printf("%s\n",new_ptr[0]);
+//     printf("%s\n",new_ptr[1]);
+//     printf("%s\n",new_ptr[2]);
+//     printf("%s\n",new_ptr[102]);
+    
+    /*
+    allocate array of int pointers to hold 1D array of their own
+    |* |--------->
+    |* |--------->
+    |* |
+    |* |
+    */
+   int **arr= (int **)malloc(rows* sizeof(int*));
+
+   for(int i=0; i<rows; i++){
+    arr[i]= (int*)malloc(cols * sizeof(int));
+   }
+   for(int i=0;i<rows;i++){
+    for(int j=0; j<cols; j++){
+        printf("*");
     }
     printf("\n");
+   }
 
-    printf("%s\n",new_ptr[0]);
-    printf("%s\n",new_ptr[1]);
-    printf("%s\n",new_ptr[2]);
-    // int *arr= malloc(sizeof(int) *rows);
-    // for(int i=0;i<cols; i++){
-    //     arr[i]= (int **)malloc(cols*sizeof(int));
-    // }
-    // // for(int i=0;i<rows;i++){
-    //     for(int j=0;j<cols;j++){
-    //         printf("*\t");
-    //     }
-    //     printf("\n");
-    // }
-
-
+    
+    free(arr);
+    for(int i=0; i<rows; i++){
+        free(arr[i]);
+    }
 
 }
