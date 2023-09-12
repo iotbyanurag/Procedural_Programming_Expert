@@ -57,6 +57,8 @@ int createDynamic2D_array(){
     |* |
     |* |
     */
+   printf("when num of rows %d cols %d\n", rows,cols);
+
    int **arr= (int **)malloc(rows* sizeof(int*));
 
    for(int i=0; i<rows; i++){
@@ -69,6 +71,20 @@ int createDynamic2D_array(){
     printf("\n");
    }
 
+rows=8;
+
+printf("when num of rows %d cols %d\n", rows,cols);
+    arr= (int **)realloc(arr, sizeof(int *)* rows);
+
+    for(int i=0; i<rows; i++){
+    arr[i]= (int*)malloc(cols * sizeof(int));
+   }
+   for(int i=0;i<rows;i++){
+    for(int j=0; j<cols; j++){
+        printf("*");
+    }
+    printf("\n");
+   }
     
     free(arr);
     for(int i=0; i<rows; i++){
