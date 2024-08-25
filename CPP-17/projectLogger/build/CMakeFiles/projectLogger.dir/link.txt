@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/projectLogger.dir/src/main.cpp.o CMakeFiles/projectLogger.dir/src/loggerBase.cpp.o -o projectLogger 
