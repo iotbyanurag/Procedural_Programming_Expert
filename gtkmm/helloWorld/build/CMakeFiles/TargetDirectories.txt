@@ -1,0 +1,3 @@
+/home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/CMakeFiles/HelloWorld.dir
+/home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/CMakeFiles/edit_cache.dir
+/home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/CMakeFiles/rebuild_cache.dir

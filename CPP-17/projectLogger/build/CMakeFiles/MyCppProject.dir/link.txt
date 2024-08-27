@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/MyCppProject.dir/src/main.cpp.o CMakeFiles/MyCppProject.dir/src/loggerBase.cpp.o -o MyCppProject 

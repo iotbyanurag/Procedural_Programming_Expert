@@ -1,4 +1,4 @@
-# Install script for directory: /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger
+# Install script for directory: /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

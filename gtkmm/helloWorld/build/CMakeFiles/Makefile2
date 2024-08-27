@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger
+CMAKE_SOURCE_DIR = /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build
+CMAKE_BINARY_DIR = /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/ProjectLogger.dir/all
+all: CMakeFiles/HelloWorld.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/ProjectLogger.dir/clean
+clean: CMakeFiles/HelloWorld.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ProjectLogger.dir
+# Target rules for target CMakeFiles/HelloWorld.dir
 
 # All Build rule for target.
-CMakeFiles/ProjectLogger.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build/CMakeFiles --progress-num=1,2,3 "Built target ProjectLogger"
-.PHONY : CMakeFiles/ProjectLogger.dir/all
+CMakeFiles/HelloWorld.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/CMakeFiles --progress-num=1,2 "Built target HelloWorld"
+.PHONY : CMakeFiles/HelloWorld.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ProjectLogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ProjectLogger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build/CMakeFiles 0
-.PHONY : CMakeFiles/ProjectLogger.dir/rule
+CMakeFiles/HelloWorld.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HelloWorld.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/CMakeFiles 0
+.PHONY : CMakeFiles/HelloWorld.dir/rule
 
 # Convenience name for target.
-ProjectLogger: CMakeFiles/ProjectLogger.dir/rule
-.PHONY : ProjectLogger
+HelloWorld: CMakeFiles/HelloWorld.dir/rule
+.PHONY : HelloWorld
 
 # clean rule for target.
-CMakeFiles/ProjectLogger.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/clean
-.PHONY : CMakeFiles/ProjectLogger.dir/clean
+CMakeFiles/HelloWorld.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/clean
+.PHONY : CMakeFiles/HelloWorld.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

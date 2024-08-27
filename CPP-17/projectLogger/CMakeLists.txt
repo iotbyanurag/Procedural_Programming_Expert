@@ -1,9 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(projectLogger)
+# Set the project name
+project(ProjectLogger)
 
-# Include header files
-include_directories(inc)
+# Specify the C++ standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Add the executable
-add_executable(projectLogger src/main.cpp src/loggerBase.cpp)
+# Add executable
+add_executable(ProjectLogger 
+    src/main.cpp
+    src/loggerBase.cpp
+)
+
+# Include directories
+target_include_directories(ProjectLogger PUBLIC 
+    ${PROJECT_SOURCE_DIR}/inc
+)

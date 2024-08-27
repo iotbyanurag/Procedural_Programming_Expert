@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger
+CMAKE_SOURCE_DIR = /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build
+CMAKE_BINARY_DIR = /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build/CMakeFiles /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/CMakeFiles /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/at1102/Documents/Procedural-Programming/CPP-17/projectLogger/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/at1102/Documents/Procedural-Programming/gtkmm/helloWorld/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,65 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ProjectLogger
+# Target rules for targets named HelloWorld
 
 # Build rule for target.
-ProjectLogger: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ProjectLogger
-.PHONY : ProjectLogger
+HelloWorld: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HelloWorld
+.PHONY : HelloWorld
 
 # fast build rule for target.
-ProjectLogger/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/build
-.PHONY : ProjectLogger/fast
+HelloWorld/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
+.PHONY : HelloWorld/fast
 
-src/loggerBase.o: src/loggerBase.cpp.o
-.PHONY : src/loggerBase.o
-
-# target to build an object file
-src/loggerBase.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/src/loggerBase.cpp.o
-.PHONY : src/loggerBase.cpp.o
-
-src/loggerBase.i: src/loggerBase.cpp.i
-.PHONY : src/loggerBase.i
-
-# target to preprocess a source file
-src/loggerBase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/src/loggerBase.cpp.i
-.PHONY : src/loggerBase.cpp.i
-
-src/loggerBase.s: src/loggerBase.cpp.s
-.PHONY : src/loggerBase.s
-
-# target to generate assembly for a file
-src/loggerBase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/src/loggerBase.cpp.s
-.PHONY : src/loggerBase.cpp.s
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ProjectLogger.dir/build.make CMakeFiles/ProjectLogger.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -185,13 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ProjectLogger"
-	@echo "... src/loggerBase.o"
-	@echo "... src/loggerBase.i"
-	@echo "... src/loggerBase.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... HelloWorld"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
